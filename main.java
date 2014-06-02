@@ -106,8 +106,9 @@ class Frame
 			if ( !this.isLast) {			
 				if (nextFrame.isStrike()) {
 					out = 20;
+				} else {
+					out = nextFrame.originalPoint();
 				}
-				out = nextFrame.originalPoint();
 			}
 		}
 		return out;
